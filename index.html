@@ -5,53 +5,26 @@
     <meta name="ad.size" content="width=300,height=250">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title> Countdown Banner by purplePatch </title>
+    <title> Ifter Sehri Countdown Banner by purplePatch </title>
     <style>     
         *{ margin: 0;padding: 0;box-sizing: border-box;background-size: 100% 100%;background-repeat: no-repeat;user-select: none; }
-        .wrapper{width: 300px;height: 250px;background-image: url("bg.jpg");background-size: 300px 250px;position: relative;cursor: grab;overflow: hidden;}
+        .wrapper{width: 300px;height: 250px;background-image: url("assets/bg.jpg");background-size: 300px 250px;position: relative;cursor: grab;overflow: hidden;}
         .absolute{position: absolute;}
         .patch_box{height: 250px;width: 300px;background-size: 300px 250px;top: 0;left: 0;z-index: 1;}
-        .patch_countdown {height: 40px;
-        width: 153px;
-        top: 30px;
-        left: 126px;
-        font-size: 27px;
-        color: #38b538;
-        font-weight: 700;
-        text-align: center;
-        line-height: 40px;}
-        .patch_countdown .hour{left: 0;right: 0;top: 0;bottom: 0;width: 39px;height: 38px;}
+        .patch_countdown {height: 40px;width: 153px;top: 30px;left: 125px;font-size: 27px;color: #38b538;font-weight: 700;text-align: center;line-height: 40px;}
+        .patch_countdown .hour{left: -8px;right: 0;top: 0;bottom: 0;width: 39px;height: 38px;}
         .patch_countdown .minute{left: 58px;right: 0;top: 0;bottom: 0;width: 38px;height: 38px;}
-        .patch_countdown .second{left: 114px;right: 0;top: 0;bottom: 0;width: 39px;height: 38px;}
-        .patch_title {
-            height: 25px;
-            width: 185px;
-            top: 10px;
-            left: 138px;
-            z-index: 1;}
-        .patch_sub_title {
-            height: 25px;
-            width: 185px;
-            top: 75px;
-            left: 145px;
-            z-index: 1;}
-        .wrapper .box { 
-               bottom: 0;
-               left: 40px !important;}
-        .wrapper .patch_text {
-            width: 120px;
-            height: 82px;
-            right: 26px;
-            bottom: 44px;
-            left: 33px;}
-        .wrapper .patch_img {width: 153px;height: 40px;right: 24px;top: 0px;}
-
+        .patch_countdown .second{left: 122px;right: 0;top: 0;bottom: 0;width: 39px;height: 38px;}
+        .patch_title {height: 18px;width: 145px;top: 7px;left: 130px;z-index: 1;}
+        .patch_sub_title {height: 15px;width: 162px;top: 85px;left: 121px;z-index: 1;}
+        .wrapper .box {bottom: 0;right: 10px;width: 238px;height: 139px;}
+        .wrapper .patch_text {width: 132px;height: 89px;bottom: 51px;left: 19px;}
+        .wrapper .patch_img {width: 182px;height: 104px;right: 7px;top: 0px;}
         @keyframes pulse {
             0% {transform: scaleX(1)}
             50% {transform: scale3d(.95, .95, .95)}
             to {transform: scaleX(1)}
         }
-
         .pulse {animation-name: pulse;animation-duration: 2s;animation-iteration-count: infinite;}
     </style>
 </head>
@@ -62,11 +35,11 @@
                 <div class="patch_countdown absolute"> 
                 </div>
             </div>
-            <div class="patch_title absolute"><img src="iftar.png" alt=""></div>
-            <div class="patch_sub_title absolute"><img src="condition.png" alt=""></div>
-            <div class="box pulse absolute"><img src="Product.png" alt=""></div>
-            <div class="patch_text pulse absolute"><img src="text.png" alt=""></div>
-            <div class="patch_img absolute"><img src="timerbg.png" alt=""></div>
+            <div class="patch_title absolute"><img src="assets/iftar.png" alt=""></div>
+            <div class="patch_sub_title absolute"><img src="assets/condition.png" alt=""></div>
+            <div class="box pulse absolute"><img src="assets/product.png" alt=""></div>
+            <div class="patch_text pulse absolute"><img src="assets/text.png" alt=""></div>
+            <div class="patch_img absolute"><img src="assets/timerbg.png" alt=""></div>
         </div>
     </a>
 <script type="text/javascript" src="animation.js"></script>

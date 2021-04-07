@@ -51,7 +51,7 @@ function checkIftarTime(todayDate, curTime) {
     var setTime = time[0]*60*60 + time[1]*60;
     var diffTime = setTime - curTime;
     if (diffTime<setTime && diffTime>=0){
-        displayTitle.src = "iftar.png";
+        displayTitle.src = "assets/iftar.png";
         displayCounter.innerHTML = printTimer(diffTime);
     }
 }
@@ -62,13 +62,13 @@ function checkSehriTime(todayDate, curTime) {
     var diffTime = setTime - curTime;
 
     if (diffTime<setTime && diffTime>=0){
-        displayTitle.src = "sehri.png";
+        displayTitle.src = "assets/sehri.png";
         displayCounter.innerHTML = printTimer(diffTime);
     }
     else {
         var lastTime = setTime+24*60*60;
         var sehriEnd = lastTime - curTime;
-        displayTitle.src = "sehri.png";
+        displayTitle.src = "assets/sehri.png";
         displayCounter.innerHTML = printTimer(sehriEnd);
     }
 }
